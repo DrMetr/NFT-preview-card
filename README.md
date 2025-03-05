@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/nft-card-preview-ZXndDGhaR3)
 - Live Site URL: [Live URL](https://drmetr.github.io/NFT-preview-card/)
 
 ## My process
