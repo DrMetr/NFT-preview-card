@@ -1,0 +1,154 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBgBlue: hsl(217, 54%, 11%);
+    --cardBGBlue: hsl(216, 50%, 16%);
+    --lineBlue: hsl(215, 32%, 27%);
+    font-style: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--softBlue);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--mainBgBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: var(--cardBGBlue);
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    min-width: 325px;
+    max-width: 350px;
+    justify-content: center;
+    margin: 5vw;
+    margin-top: 5vh;
+    padding: 20px;
+    gap: 1lh;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 30vw;
+        min-width: 325px;
+    }
+}
+
+picture {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+picture > img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: auto;
+}
+
+#overlay {
+    position: absolute;
+    background-color: var(--cyan);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay img {
+    height: 4rem;
+    width: 4rem;
+}
+
+#overlay:hover{
+    opacity: 0.5;
+}
+
+#overlay img:hover {
+    opacity: 1.0;
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+}
+
+#price_timeLeft {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+}
+
+#eth_and_icon img, #time_and_clock img {
+    height: 1lh;
+    margin-right: 0.5rem;
+}
+
+#eth_and_icon, #time_and_clock {
+    display: flex;
+    flex-direction: row;
+}
+
+#eth {
+    color: var(--cyan);
+}
+
+h1:hover, span:hover, main > img:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+h1, span, main > img {
+    transition: 0.2s ease-in-out;
+}
+
+#eth, #daysLeft, span {
+    font-weight: 400;
+}
+
+hr {
+    opacity: 25%;
+}
+
+#created_by {
+    display: flex;
+    flex-direction: row;
+    height: 1.5lh;
+    gap: 4%;
+}
+
+#created_by img {
+    height: 1.5lh;
+    border: 1.5px solid white;
+    border-radius: 25px;
+}
+
+#created_by p {
+    line-height: 1.7;
+}
+
+span {
+    color: white;
+}
